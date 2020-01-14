@@ -2,6 +2,11 @@
 	font-family: "Source Sans Pro", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+	margin: 4px;
+	color: #333;
+}
+
 html, body {
 	margin: 0;
 }
@@ -69,6 +74,7 @@ a {
 	border-bottom-color: #FD971F;
 }
 
+/* global */
 .content {
 	margin-left: auto;
 	margin-right: auto;
@@ -76,4 +82,78 @@ a {
 	display: block;
 	width: 1000px;
 	max-width: calc(100% - 20px);
+}
+
+.success {
+	display: block;
+	padding: 10px 16px;
+	background-color: #28a745;
+	color: #fff;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+.error {
+	display: block;
+	padding: 10px 16px;
+	background-color: #dc3545;
+	color: #fff;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+.input {
+	display: block;
+	border: 1px solid #bbb;
+	background-color: #fff;
+	border-radius: 2px;
+	max-width: 100%;
+	padding: 4px 6px;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 10px;
+	color: #fff;
+	border: 0;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn-blue {
+	background-color: #007bff;
+}
+
+.btn-grey {
+	background-color: #888;
+}
+
+.btn-red {
+	background-color: #dc3545;
+}
+
+.btn-right {
+	float: right;
+}
+
+/* guestbook */
+.gb-post {
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+	display: block;
+	width: calc(100% - 20px);
+}
+
+.gb-name {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.gb-date {
+	font-size: 14px;
+	color: #555;
 }

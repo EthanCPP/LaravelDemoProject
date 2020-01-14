@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('guestbook/', function () {
-    return view('guestbook');
-});
+Route::get('guestbook/', 'GuestbookController@index');
+Route::get('guestbook/delete/{id}', 'GuestbookController@delete');
+
+Route::post('guestbook/', 'GuestbookController@newpost');
